@@ -1,0 +1,15 @@
+Creating the first LaTex Document
+
+* Title 
+\title{Creating first document in \LaTex}
+
+*Author
+\author{Sam}
+
+*Date
+\date{\today}
+
+*Write content
+\begin{document}
+	content...
+\end{document}
