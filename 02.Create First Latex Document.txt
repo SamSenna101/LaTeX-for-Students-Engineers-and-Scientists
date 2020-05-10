@@ -1,15 +1,14 @@
 Creating the first LaTex Document
 
-* Title 
-\title{Creating first document in \LaTex}
-
-*Author
-\author{Sam}
-
-*Date
+\documentclass{article}
+\title{LaTeX Document}
+\author{Sam Senna}
 \date{\today}
 
-*Write content
 \begin{document}
-	content...
+	\maketitle
+	Hello this is my first document in LaTeX
 \end{document}
+
+*hit built and run!
+*without \maketitle top section (\title.. \date) won't execute.
