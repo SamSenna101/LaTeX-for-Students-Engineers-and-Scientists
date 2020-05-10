@@ -1,0 +1,17 @@
+*.If you are a windows user follow the below steps
+Download miktex
+https://miktex.org/download
+
+*.If you are a ubuntu user follow the below steps
+sudo apt-get install texlive-full
+
+*.Choose favourite IDE
+Texstudio : https://www.texstudio.org/
+Kile : https://kile.sourceforge.io/
+Texworks : http://www.tug.org/texworks
+
+Web based Editors
+Overleaf : https://www.overleaf.com
+LaTex Base : https://latexbase.com
+Papeeria : https://papeeria.com/
+Authorea : https://www.authorea.com/
