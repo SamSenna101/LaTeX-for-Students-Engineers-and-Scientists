@@ -1,0 +1,52 @@
+*In LaTeX "%" denotes a comment
+*"Article" documentclass do not have chapters 
+*Chapters only avaible in "book" & "report" classes
+"\\" creates a new line
+Table of contents created by "\tableofcontents" command at the beginning of the document
+
+
+*Avoid entry in ToC
+Whenever we write commands like \chapter{...}, \section{...}, the title is mentioned in the table of contents that is generated. 
+There are situations when you would not like the entry in ToC. 
+This is achieved by appending a * to the command. For example, consider the commands \chapter*{Introduction} or \subsection*{Time-Table}. 
+There will not be any entry of Introduction and Time-Table in the Table of Contents.
+
+*Special Characters
+Special characters like ! @ * ( ) - + = ? [ ] / can be written as is in the document. 
+Unlike them, there are certain characters which need to be written with an escape character (\), 
+else they either throw an error or do not display the way we want.
+ Some of them are $ & % _ {  } # which are thus are written as \$  \&  \%  \_  \{   \}   \#
+
+*Dashes
+i.Hyphen (-) is mostly used in between two words, e.g. (two-sided). 
+ii.En dash (\textendash) is mostly used when specifying range of pages, years, etc. E.g. pages 5 -- 7 explain XYZ
+iii.Em dash (\textemdash) (longer than En dash) is mostly used in place of parentheses or colon. 
+E.g. Where there is love there is life --- Mahatma Gandhi
+
+*Quotes
+Single and double quotes in a document are usually written using '...' and "..." respectively. LaTeX, on the other hand, denotes different characters for representing the opening and closing of quotes.
+ ` symbol (usually present before the Number 1 key on a standard keyboard) represents the opening of quotes while ' represents the closing of quotes.
+ 
+ \documentclass{article}
+%\documentclass{book}
+\title{LaTeX Document}
+\author{Sam Senna}
+%\author{Sam Senna \\and \\Samira Senanayake}
+\date{\today}
+
+\begin{document}
+	\maketitle
+	\tableofcontents
+	%\chapter{Chapter1}
+	\section{Introduction}
+	\paragraph{}
+	My Name is Sam. I live in Sri Lanka and I am a good boy. My Name is Sam. I live in Sri Lanka and I am a good boy. My Name is Sam. I live in Sri Lanka and I am a good boy. My Name is Sam. I live in Sri Lanka and I am a good boy.
+	
+	\subsection{Purpose}
+	My Name is Sam. I live in Sri Lanka and I am a good boy. My Name is Sam. I live in Sri Lanka and I am a good boy. My Name is Sam. I live in Sri Lanka and I am a good boy. My Name is Sam. I live in Sri Lanka and I am a good boy.
+	
+	\subsection{Scope}
+	
+	\section{overall Description}
+	
+\end{document}
