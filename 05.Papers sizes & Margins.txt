@@ -1,1 +1,72 @@
+using packages in LaTeX
+-Provides new features to use in LaTeX
+-syntax: \usepackage[Parameters]{PackageName}
+-Mention before document begins
 
+Papers Size:
+-A Series: A0, A1, A2, A3, A4
+-B Series: B0, B1, B2, B3, B4
+- paper sizes given using geometry package
+example: \usepackage [a4paper] {geometry}
+
+Margins
+-Margins also given using geometry package
+-left, right, top, bottom
+example: \usepackage[margin=1.5in]{geometry} 
+
+Use both together
+example: left right top bottom margins set for 1inch
+\usepackage[a4paper, margin=1in]{geometry}
+
+example: cutome margins
+\usepackage[a4paper, top=1in, left=2.5in, right=0.75in, bottom=3in]{geometry}
+
+Margins of Two sided document
+-Print on both sides: Book, 2sided article
+-\usepackage[inner=1.5in, outer=0.5in]{geometry}
+
+
+%\documentclass{article}
+\documentclass{book}
+%\usepackage[a4paper]{geometry}
+%left right top bottom margins set for 1inch
+%\usepackage[a4paper, margin=1in]{geometry}
+%\usepackage[a4paper, top=1in, left=2.5in, right=0.75in, bottom=3in]{geometry}
+\usepackage[a4paper, inner=2in, outer=1in]{geometry}
+\begin{document}
+
+	\chapter{Chapter 1}
+	\section{title}
+	My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D.My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D.
+	
+	\section{title}
+	My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D.My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D.
+	
+	\section{title}
+	My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D.My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D.
+	
+	\section{title}
+	My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D.My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D.
+	
+	\section{title}
+	My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D.My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D.
+	
+	\section{title}
+	My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D.My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D.
+	
+	\section{title}
+	My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D.My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D.
+	
+	\section{title}
+	My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D.My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D.
+	
+	\section{title}
+	My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D.My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D.
+	
+	\section{title}
+	My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D.My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D.
+	
+	\section{title}
+	My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D.My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D.
+	
+\end{document}
