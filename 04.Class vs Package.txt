@@ -1,0 +1,12 @@
+The main difference is that, in LaTeX, a document can have only 1 class but many packages. 
+
+Class
+Class files have .cls extension and are responsible for the overall layout, structuring (organizing), and formatting of a document. 
+For example, a book class contains chapters, sections, parts; while an article contains sections, subsections. Each of which has a different set and style of formatting. 
+The class files will be available on your system as article.cls, book.cls, etc..
+
+Package
+Packages have a .sty extension also called as style files.
+The primary objective of the package is to add some functionality, irrespective of the class in which it will be used.
+Some examples to note are, 'geometry' package, that is used to specify margins and paper size; 'graphicx' package, that is used to include an image, etc.. All of these can be used in any class.
+The packages will be available on your system as geometry.sty, graphicx.sty, etc.. The coming sessions make use of the packages.
