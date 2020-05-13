@@ -33,17 +33,19 @@ Example:
 
 *Adding space between the columns
 
-%\documentclass[twocolumn]{article}
-\documentclass{article}
-\usepackage{lipsum}
-\usepackage{multicol}
-\begin{document}
-	\setlength{\columnsep}{35pt}
-	\begin{multicols}{3}
-	\lipsum[1-14]
-	\end{multicols}
-\end{document}
+By using the \columnbreak you can force a text to appear in the next column 
 
+*Column Spacing
+-Spacing between the columns
+Command: \setlength{\columnsep}{<X>pt}
+
+*Column Separator
+-Dividing columns with a line
+Command: \setlength{\columnseprule}{<X>pt}
+
+*Column Break
+-Force Text into nextcolumn
+Command: \columnbreak
 
 %\documentclass[twocolumn]{article}
 \documentclass{article}
@@ -53,6 +55,44 @@ Example:
 	\setlength{\columnsep}{20pt}
 	\setlength{\columnseprule}{1pt}
 	\begin{multicols}{3}
-	\lipsum[1-14]
+		\lipsum[1-14]
 	\end{multicols}
+
+	\begin{multicols}{3}
+		Row, row, row your boat
+		Gently down the stream
+		If you see a crocodile
+		Don't forget to scream
+		
+		\columnbreak
+		Row, row, row your boat
+		Gently down the stream
+		If you see a crocodile
+		Don't forget to screamfsd
+		sffdsfsfsdfsdffs
+		sfs
+		fsfsfsfsfsdf
+		g
+		sdg
+		g
+		drg
+		ger
+		gre
+		gregergregge
+		
+		\columnbreak
+		bubala 
+		bubala boom boo
+		baalddlsl
+		ddlfll
+		gdlgdgldgld
+		gd
+		lgdlgdf
+		gd
+		
+	\end{multicols}
+		
 \end{document}
+*Column Separator
+
+*Column Break
