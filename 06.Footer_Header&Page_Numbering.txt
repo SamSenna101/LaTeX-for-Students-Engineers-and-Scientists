@@ -1,0 +1,81 @@
+Customize headers and footers
+
+*Styles
+-empty: No header nor footer
+-plain: Footer contains the page number
+-headings: Header contains section name and page number
+
+*Entire Document
+Command: \pagestyle{<style>}
+
+*Current Page
+Command: \thispagestyle{<style>}
+
+*To put a page number on a specific page, go to the page from the pdf viewer. example page 2; write click on the source of the 2nd page from pdf viewer and select "Go to source"
+
+example:
+\section{title}
+\thispagestyle{headings} 
+
+*Pagecounter
+If we want to start the numbering from chapter skipping table of content and other pre-chapter scetion we can use "setcounter" command
+
+Command: \setcounter{page}{1}
+
+Change Page numbering style
+*Page Numbering Style
+-arabic: 1, 2, 3, 4
+-roman: i, ii. iii, iv
+-Roman: I, II, III
+
+Command: \pagenumbering{<style>}
+
+%\documentclass{article}
+\documentclass{book}
+\begin{document}
+	\pagenumbering{roman}
+	\tableofcontents
+	
+	
+	%\pagestyle{empty}
+	\chapter{Overview}
+	\pagenumbering{arabic}
+	\setcounter{page}{1}
+	\section{title}
+	My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D.My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D.
+	
+	\section{title}
+	My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D.My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D.
+	
+	\section{title}
+	My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D.My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D.
+	
+	\section{title}
+	My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D.My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D.
+	
+	\section{title}
+	My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D.My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D.
+	
+	\section{title}
+	%\thispagestyle{headings}
+	My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D.My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D.
+	
+	\section{title}
+	My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D.My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D.
+	
+	\chapter{Chapter 2}
+	\pagenumbering{Alph}
+	\setcounter{page}{1}
+	\section{title}
+	My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D.My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D.
+	
+	\section{title}
+	My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D.My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D.
+	
+	\section{title}
+	My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D.My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D.
+	
+	\section{title}
+	My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D.My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D. My name is Samira, i am a good boy :D.
+	
+\end{document}
