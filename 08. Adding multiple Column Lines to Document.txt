@@ -1,0 +1,58 @@
+*2 columns
+-Research papers
+-Books
+
+Syntax: \documentclass[twocolumn]{...}
+
+Example:
+\documentclass[twocolumn]{article}
+\usepackage{lipsum}
+\begin{document}
+	\lipsum[1-14]
+\end{document}
+
+*Multi Column
+-Magazine
+-Newspapers
+
+Syntax: 
+\begin{multicols{<No.ofColumns>}
+...
+\end{multicols}
+
+Example: 
+%\documentclass[twocolumn]{article}
+\documentclass{article}
+\usepackage{lipsum}
+\usepackage{multicol}
+\begin{document}
+	\begin{multicols}{3}
+	\lipsum[1-14]
+	\end{multicols}
+\end{document}
+
+*Adding space between the columns
+
+%\documentclass[twocolumn]{article}
+\documentclass{article}
+\usepackage{lipsum}
+\usepackage{multicol}
+\begin{document}
+	\setlength{\columnsep}{35pt}
+	\begin{multicols}{3}
+	\lipsum[1-14]
+	\end{multicols}
+\end{document}
+
+
+%\documentclass[twocolumn]{article}
+\documentclass{article}
+\usepackage{lipsum}
+\usepackage{multicol}
+\begin{document}
+	\setlength{\columnsep}{20pt}
+	\setlength{\columnseprule}{1pt}
+	\begin{multicols}{3}
+	\lipsum[1-14]
+	\end{multicols}
+\end{document}
