@@ -1,0 +1,102 @@
+*\lipsum package generate random text
+command: \lipsum[1-10]hs from 1 to 10
+1-10 means generate paragrap
+
+*Set Orientation 
+-Portrait : \usepackage[landscape]{geometry}
+-Landscape : \usepackage[landscape]{geometry}
+
+\documentclass{article}
+\usepackage{lipsum}
+\usepackage[landscape]{geometry}
+\begin{document}
+	\lipsum[1-10]
+\end{document}
+
+*Moreover
+-Package
+command: \usepackage{lscape} 
+above command rotates content by 90 degrees
+
+command: \usepackage{pdflscape}
+Rotates page by 90 degrees
+
+*What to do when you want to use landscape for specific pages. Incert your landscape content between \begin and \end
+
+Command: 
+\begin{landscape}
+\end{landscape}
+
+\documentclass{article}
+\usepackage{lipsum}
+%\usepackage[landscape]{geometry}
+%\usepackage{lscape}
+\usepackage{pdflscape}
+\begin{document}
+	\section{Title 1}
+	\lipsum[1-5]
+	
+	
+	\begin{landscape}
+		\section{Title 2}
+		\lipsum[1-2]
+	\end{landscape}
+	
+	\lipsum[1-10]
+\end{document}
+
+
+
+
+*Add Page Breaks
+
+Sometime we want to  content to appear on the next page
+Commands: \pagebreak & \newpage 
+
+\documentclass{article}
+\usepackage{lipsum}
+%\usepackage[landscape]{geometry}
+%\usepackage{lscape}
+\usepackage{pdflscape}
+\begin{document}
+	\section{Title 1}
+	\lipsum[1-5]
+	
+	\pagebreak
+	\section{a section in between}
+	\lipsum[1-3]
+	
+	\begin{landscape}
+		\section{Title 2}
+		\lipsum[1-2]
+	\end{landscape}
+	
+	\lipsum[1-10]
+\end{document}
+
+
+*Set footnotes
+-More more information about the content
+Command: \footnote{text to be displayed as footnote}
+
+\documentclass{article}
+\usepackage{lipsum}
+%\usepackage[landscape]{geometry}
+%\usepackage{lscape}
+\usepackage{pdflscape}
+\begin{document}
+	\section{Title 1}
+	\lipsum[1-5]
+	
+	\pagebreak
+	\section{a section in between}
+	\lipsum[1-3]
+	Samira is a good boy \footnote{Refer to the wiki article for more information} What else do you need \footnote{contact me if you need}
+	
+	\begin{landscape}
+		\section{Title 2}
+		\lipsum[1-2]
+	\end{landscape}
+	
+	\lipsum[1-10]
+\end{document}
