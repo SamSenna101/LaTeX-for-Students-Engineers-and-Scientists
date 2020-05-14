@@ -65,7 +65,44 @@ Style: (i,ii,...), (I,II,...),(a,b,...),(A,B,...),(1,2,..)
 Command:  \begin{enumerate}[<Style>]
 Example: \begin{enumerate}[(A)] 
 
+*Possible Errors
 
+Some of the possible errors that might occur while creating lists are given below.
+1) Missing item
+
+In this case, you write your itemize or enumerate environments, but do not write any item in it. The example is shown below.
+
+\begin{itemize}
+	
+\end{itemize}
+
+This displays an error message stating 'Something's wrong--perhaps a missing \item. \end{itemize}'
+2) Nesting lists more than 4 levels
+
+There is a limitation of 4 levels nesting. Consider the following example
+
+\begin{itemize}
+   \item fruit
+   \begin{itemize}
+      \item mango
+      \begin{itemize}
+         \item Ripe
+         \begin{itemize}
+            \item Hapus
+            \begin{itemize}
+               \item Ratnagiri
+            \end{itemize}
+            \item Badami
+         \end{itemize}
+         \item Raw
+      \end{itemize}
+      \item Apple
+   \end{itemize}
+   \item vegetable
+\end{itemize}
+
+This displays an error 'Too deeply nested. \begin{itemize}'
+--------------------------------------------------------------
 \documentclass{article}
 \usepackage{enumerate} %to change enumerate styles
 \usepackage{amssymb} %to change bullet styles
@@ -133,3 +170,4 @@ Example: \begin{enumerate}[(A)]
 		\item Monitor
 	\end{itemize}
 \end{document}
+
