@@ -1,0 +1,80 @@
+*Package: setspace
+*Entire Document
+-\singlespacing : by default
+-\onehalfspacing
+-\doublespacing : Usually use by the proof readers to proof read the document
+
+
+*Certain part
+\begin{singlespace | onehalfspace | doublespace}
+...
+\end{...}
+
+
+*Insert verticle spacing
+*Sometime there's a need add a little by of vertical space between the content of the document. This could be
+spacing between two paragraphs, or text and image, or text and table.. etc
+
+Commands:
+-\vspace{Xpt}
+-\smallskip
+-\medskip
+-\bigskip
+-\vfill : Evenly space between paragraph, ideal for title bage and banners
+
+*Insert horizontal spacing
+Commands:
+\ : single space
+\, 
+\hspace{Xpt}
+\hfill
+
+*Usually used for tabsetting in mathematics
+
+\documentclass{article}
+\usepackage{lipsum}
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\begin{document}
+		%\doublespacing
+		\begin{doublespace}
+			\lipsum[1-1]
+		\end{doublespace}
+				
+		\lipsum[1-2]
+		\pagebreak
+		
+		\lipsum[1-1]
+		\smallskip
+		
+		\lipsum[1-1]
+		\medskip
+		
+		\lipsum[1-1]
+		\bigskip
+			
+		\lipsum[1-1]
+		\vspace{20pt}
+		
+		\lipsum[1-1]
+		
+		\pagebreak
+		
+		\lipsum[1-1]
+		\vfill
+		
+		\lipsum[1-1]
+		\vfill
+		
+		\lipsum[1-1]
+		
+		\pagebreak
+		
+		\noindent 
+		\LaTeX Document \\
+		\LaTeX \ Document \\
+		\LaTeX \, Document \\
+		\LaTeX \hfill Document \\
+				
+		
+\end{document}
