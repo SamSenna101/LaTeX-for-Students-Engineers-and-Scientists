@@ -31,6 +31,20 @@ Commands:
 
 *Usually used for tabsetting in mathematics
 
+
+Custom Spacing
+
+Rather than using one, one and a half, and double spacing, one can have a custom spacing as well. The same package, 'setspace' needs to be included. 
+Entire Document
+
+\spacing{X}
+Certain Part
+
+\begin{spacing}{X}
+...
+\end{spacing}
+
+
 \documentclass{article}
 \usepackage{lipsum}
 \usepackage[margin=1in]{geometry}
