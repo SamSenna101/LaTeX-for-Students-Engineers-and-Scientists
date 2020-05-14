@@ -1,0 +1,66 @@
+*Increace/decrese font size
+Font Sizes 
+\tiny
+\scriptsize
+\footnotesize
+\small
+\normalsize
+\large
+\Large
+\LARGE
+\huge
+\Huge
+
+Example:
+\documentclass{article}
+\usepackage{lipsum}
+\begin{document}
+	he Google Cloud Free {\Large Tier} gives you free resources to learn about Google Cloud services by trying them on your own.
+  Whether you're completely new to the platform and need to learn the basics, or you're an established customer and want to 
+  experiment with new solutions, the Google {\tiny Cloud} Free Tier has you covered.he Google Cloud Free Tier gives you free 
+  resources to learn about Google Cloud services by trying them on your own. Whether you're completely new to the platform and
+  need to learn the {\huge basics}, or you're an established customer and want to experiment with new solutions, the Google 
+  Cloud Free Tier has you covered.
+	
+	\tiny
+	\lipsum[1-2]
+	
+	\huge
+	\lipsum[3-4]
+	
+\end{document}
+
+
+*User different font styles
+Bold: \textbf{}
+Italics: \emph{}
+Underline: \underline{}
+
+Example: 
+\documentclass{article}
+\begin{document}
+	he Google Cloud \textbf{Free Tier gives you free resources to learn about Google Cloud services} by trying them on your own. 
+  Whether you're completely new to the platform and need to learn the basics, or \emph{you're an established customer and want} 
+  to experiment with new solutions, the  Google Cloud Free Tier has you covered.he Google Cloud Free Tier gives you free resources to learn about Google Cloud 
+  her you're completely new to the platform and need to learn the basics, or you're an established customer and want to experiment with new solutions, 
+  the Google {\tiny Cloud} Free Tier has you covered.he Google Cloud Free Tier gives you free resources to learn about Google Cloud services by trying 
+  them on your own. Whether you're completely new to the platform and need to learn the {\huge basics, or you're an established customer and want to experiment her you're completely new to 
+  the platform and need to learn the basics, or you're an established customer and want to experiment with new solutions, the Google {\tiny Cloud} Free Tier has you covered.he Google 
+  Cloud Free Tier gives you free resources to learn about Google Cloud services by trying them on your own. Whether you're completely new to the platform and need to learn the {\huge basics,
+  or you're an established customer and want to experiment with new solutions, the Google Cloud Free Tier has you covered.
+  with new solutions, the Google Cloud Free Tier has you covered.services by trying them on your own. \underline{Whether you're completely new to the platform} and need to learn 
+  the basics, or you're an established customer and want to experiment with new solutions, the Google Cloud Free Tier has you 
+  covered.
+\end{document}
+
+More font styles
+\textbf{...}  
+\textit{...}
+\emph{...}
+\underline{...}
+\textsc{...}
+\textrm{...}
+\textsf{...}
+\texttt{...}
+\textsuperscript{...}
+\textsubscript{...}
