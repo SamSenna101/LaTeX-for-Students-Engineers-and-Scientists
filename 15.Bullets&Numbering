@@ -1,1 +1,135 @@
+Bullets anf Numbering
 
+*Create order list
+-Similar to numbered list
+Example
+\begin{enumerate}
+	\item Red
+	\item Green
+	\item White
+\end{enumerate}
+
+*Create unordered list
+-Similar to bulleted list
+Example
+\begin{itemize}
+	\item Mouse
+	\item Keyboard
+	\item Monitor
+\end{itemize}
+*Create description list
+-More information for the each item in the list
+Example
+\begin{description}
+	\item [Devices set1]: mouse, Wire, Screen
+	\item [Devices set2]: Keys, Touchpad, pen
+\end{description}
+
+*Nested List
+\begin{enumerate}
+	\item Red
+	\begin{itemize}
+		\item nest1
+		\item nest2
+		\item nest2
+	\end{itemize}
+	\item Green
+	\item White
+\end{enumerate}
+
+*Change the bullet style
+
+To change the bullet style
+Package: amssymb
+Style: 
+\blacksquare
+\square
+\bullet
+\cdot
+\diamond
+-
+*
+\circ
+
+Command: 
+\renewcommand{\lableitem<Level>}{$<Style>$}
+*Here the leve lnumber denotes the nesting level
+Example
+\renewcommand{\labelitemi}{$\diamond$} 
+
+*Change the numbering
+
+To Change the Numbering style in Enumerate
+Package: enumerate
+Style: (i,ii,...), (I,II,...),(a,b,...),(A,B,...),(1,2,..)
+Command:  \begin{enumerate}[<Style>]
+Example: \begin{enumerate}[(A)] 
+
+
+\documentclass{article}
+\usepackage{enumerate} %to change enumerate styles
+\usepackage{amssymb} %to change bullet styles
+\begin{document}
+		
+	\section{Section1}
+	\begin{itemize}
+		\item Mouse
+		\item Keyboard
+		\item Monitor
+	\end{itemize}
+	
+	\section{section2}
+	\begin{enumerate}
+		\item One
+		\item Two
+		\item Three
+	\end{enumerate}
+
+	\section{section3}
+	\begin{description}
+		\item [Devices set1]: mouse, Wire, Screen
+		\item [Devices set2]: Keys, Touchpad, pen
+ 	\end{description}
+
+	\section{section4}
+	\begin{enumerate}
+		\item One
+		\begin{enumerate}
+			\item Nested1
+			\begin{itemize}
+				\item Nested in Nested 1
+				\item Nested in Nested 2
+			\end{itemize}
+			\item Nested2
+			\item Nested3
+		\end{enumerate}
+		\item Two
+		\item Three
+	\end{enumerate}
+	
+	\section{section5}
+	\begin{enumerate}[(A)]
+		\item Item1
+		\item Item2
+	\end{enumerate}
+
+	\section{section6}
+	\begin{enumerate}[i.]
+		\item Item1
+		\item Item2
+	\end{enumerate}
+
+	\renewcommand{\labelitemi}{$\diamond$}
+	\renewcommand{\labelitemii}{$\cdot$}	
+	\section{Section7}
+	\begin{itemize}
+		\item Mouse
+		\begin{itemize}
+			\item one
+			\item two
+			\item three
+		\end{itemize}
+		\item Keyboard
+		\item Monitor
+	\end{itemize}
+\end{document}
