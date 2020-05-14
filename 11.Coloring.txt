@@ -1,1 +1,29 @@
+*Basic Colors
+-red
+-blue
+-green
+-white
+-yellow etc.
 
+*Package: color
+
+*More Colors
+-Package: xolor
+-parameters: dvipsnames
+
+*Assign a color to text
+-Single color
+\textcolor{blue}{Text}
+
+-Mixing with wite
+!. A mixture of 70% red and 30% white
+\textcolor{red!70}{Text}
+
+-Mixture of 2 colors
+\textcolor{red!70!blue}{}
+
+*Assign a color to page
+
+Example:
+\pagecolor{Goldenrod}
+\pagecolor{Goldenrod!50}
