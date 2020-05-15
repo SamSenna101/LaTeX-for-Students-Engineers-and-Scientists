@@ -1,0 +1,21 @@
+First character larger than others
+
+The lettrine pakcage provides a facility to typeset the first character in a paragraph in larger font size. The syntax is as follows:
+
+\usepackage{lettrine}
+
+\letterine{Big Letter}{Rest of the word} ...
+
+Consider some examples given below
+
+    \lettrine{O}{nce} upon a time, \lipsum[2-2]
+
+In this example, the letter 'O' will be large and the characters 'nce' will be in capitals. This will be followed by the paragraph written.
+
+    \lettrine{\textbf{O}}{} nce upon a time, \lipsum[2-2]
+
+In this example, the letter 'O' will be large and bold. This will be followed by the characters 'nce' and the paragraph written.
+
+    \lettrine{\fbox{\textbf{O}}}{} nce upon a time, \lipsum[2-2]
+
+In this example, the letter 'O' will be large, bold, and decorated with a border. This will be followed by the characters 'nce' and the paragraph written.
