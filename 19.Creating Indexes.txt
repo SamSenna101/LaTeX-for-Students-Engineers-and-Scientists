@@ -13,6 +13,17 @@ Indexes
 -Display them (Usually at the end}
 \printindex
 
+*Number of Columns
+-Columns
+\makeindex[columns=X]
+x denoted a number
+
+-Display custome title
+\makeindex[title=BLack Index]
+
+-Add the entry in table of contents
+\makeindex[intoc]
+
 \documentclass[12pt]{article}
 \usepackage[margin=1in]{geometry}
 \title{Tiger}
