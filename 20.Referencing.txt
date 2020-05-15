@@ -123,3 +123,76 @@ To do this in TeXstudio go to "Tools" -> CLean Auxilary FIles
 	title={Wikipedia},
 	howpublished="\url{https://en.wikipedia.org/wiki/Wikipedia}"
 }
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*Nocite
+There are situations when you would like to mention a reference in your document without citing. \nocite command is used for this purpose. This is illustrated using the same code just covered in the session. The only difference is that a new reference is added in the .bib file and the \nocite command is mentioned in .tex file. These are highlighted in red color. 
+
+When you build and run the code, notice that the reference appears in the document even though it is not cited.
+
+*.tex Code
+\documentclass[conference]{IEEEtran}
+\usepackage{hyperref}
+\usepackage{lipsum}
+\title{Collection of some Papers}
+\author{Firuza}
+\date{}
+\begin{document}
+    \maketitle
+    \section{Introduction}
+    Some random text for elastic SQL. \cite{Tatemura} \lipsum[1-2]
+
+    \section{Specifications}
+    Some random text for database. \cite{ullman} \lipsum[1-2]
+
+    \section{Links}
+    Some random text for the wiki link. \cite{wiki} \lipsum[1-2]
+
+    \nocite{baum2003collapse}
+    \bibliographystyle{IEEEtran}
+    \bibliography{biblioAll}
+\end{document}
+
+*.bib code
+@inproceedings{Tatemura,
+	author = {Tatemura, Junichi and Po, Oliver and Hsiung, Wang-Pin and Hacig\"{u}m\"{u}\c{s}, Hakan},
+	title = {Partiqle: An Elastic SQL Engine over Key-value Stores},
+	booktitle = {Proceedings of the 2012 ACM SIGMOD International Conference on Management of Data},
+	series = {SIGMOD '12},
+	year = {2012},
+	isbn = {978-1-4503-1247-9},
+	location = {Scottsdale, Arizona, USA},
+	pages = {629--632},
+	numpages = {4},
+	url = {http://doi.acm.org/10.1145/2213836.2213917},
+	doi = {10.1145/2213836.2213917},
+	acmid = {2213917},
+	publisher = {ACM},
+	address = {New York, NY, USA},
+	keywords = {cloud computing, elasticity, oltp, scalability},
+} 
+
+@book{ullman,
+	title={Principles of database systems},
+	author={Ullman, Jeffrey D},
+	year={1984},
+	publisher={Galgotia publications}
+}
+
+@misc{wiki,
+	title={Wikipedia},
+	howpublished="\url{https://en.wikipedia.org/wiki/Wikipedia}"
+}
+
+@article{baum2003collapse,
+	title={Collapse and conservation of shark populations in the Northwest Atlantic},
+	author={Baum, Julia K and Myers, Ransom A and Kehler, Daniel G and Worm, Boris and Harley, Shelton J and Doherty, Penny A},
+	journal={Science},
+	volume={299},
+	number={5605},
+	pages={389--392},
+	year={2003},
+	publisher={American Association for the Advancement of Science}
+}
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
