@@ -71,6 +71,7 @@ To do this in TeXstudio go to "Tools" -> CLean Auxilary FIles
 \nocite{KEY}
 
 *.tex Document Code 
+%\documentclass{article}
 \documentclass[conference]{IEEEtran}
 \usepackage{hyperref}
 \usepackage{lipsum}
