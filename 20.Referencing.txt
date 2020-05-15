@@ -1,0 +1,124 @@
+Referencing
+*When creating the reference section you are required to created a "bib" file.
+
+*HOw to create a bib file
+-Open up TeXstudio
+-Create a new document (Ctrl+N)
+-Save it (Ctrl+s)
+-Give a propername example: bibilo.bib
+-Save
+-Add referencing information to this file
+
+Bibliography File (.bib)
+For proceedings 
+Example1
+@inproceedingd{KEY,
+	title={},
+	author={},
+	booktitle={},
+	pages={X--Y}
+	year={}
+	organization={}
+}
+
+
+For Article
+Example2
+@article{KEY,
+	title={},
+	author={},
+	journal={},
+	volume={},
+	number={},
+	pages={X--Y},
+	year={},
+	publisher={}
+}
+
+For Book
+Example3
+@book{KEY,
+	title={},
+	author={},
+	volume={},
+	year={},
+	publisher={},
+	location={},
+}
+
+Get bibtex
+-BibTex
+-Google scholar (in the google scholer search results page, click on the corresponding " icon and click on BibTex option 
+-ACM	(When you go to article/journal page "BibTeX" details should be available unber Tools and Resources section)
+-IEEE
+-Click Cite, BibTex
+-Copy
+
+
+Cite
+-Cite
+\cite{KEY}
+
+-Style: plain, alpha, unsrt, acm ..etc.
+\bibliographystyle{Style}
+*When ever you change the style, before build and run the .tex file with a new style (plain,alpha...etc) It is a good practice to clean the auxilary files.
+To do this in TeXstudio go to "Tools" -> CLean Auxilary FIles
+
+-bib file
+\bibliography{filename.bib}
+
+-Include reference without citing
+\nocite{KEY}
+
+*.tex Document Code 
+\documentclass[conference]{IEEEtran}
+\usepackage{hyperref}
+\usepackage{lipsum}
+\title{Collection of some Papers}
+\author{Firuza}
+\date{}
+\begin{document}
+    \maketitle
+    \section{Introduction}
+    Some random text for elastic SQL. \cite{Tatemura} \lipsum[1-2]
+
+    \section{Specifications}
+    Some random text for database. \cite{ullman} \lipsum[1-2]
+
+    \section{Links}
+    Some random text for the wiki link. \cite{wiki} \lipsum[1-2]
+
+	\bibliographystyle{IEEEtran}
+	\bibliography{biblio}
+\end{document}
+
+*biblio.bib Code
+@inproceedings{Tatemura,
+	author = {Tatemura, Junichi and Po, Oliver and Hsiung, Wang-Pin and Hacig\"{u}m\"{u}\c{s}, Hakan},
+	title = {Partiqle: An Elastic SQL Engine over Key-value Stores},
+	booktitle = {Proceedings of the 2012 ACM SIGMOD International Conference on Management of Data},
+	series = {SIGMOD '12},
+	year = {2012},
+	isbn = {978-1-4503-1247-9},
+	location = {Scottsdale, Arizona, USA},
+	pages = {629--632},
+	numpages = {4},
+	url = {http://doi.acm.org/10.1145/2213836.2213917},
+	doi = {10.1145/2213836.2213917},
+	acmid = {2213917},
+	publisher = {ACM},
+	address = {New York, NY, USA},
+	keywords = {cloud computing, elasticity, oltp, scalability},
+} 
+
+@book{ullman,
+	title={Principles of database systems},
+	author={Ullman, Jeffrey D},
+	year={1984},
+	publisher={Galgotia publications}
+}
+
+@misc{wiki,
+	title={Wikipedia},
+	howpublished="\url{https://en.wikipedia.org/wiki/Wikipedia}"
+}
