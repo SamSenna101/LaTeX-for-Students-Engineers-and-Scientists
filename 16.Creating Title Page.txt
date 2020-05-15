@@ -1,0 +1,43 @@
+Cutomize Title Page
+
+Creating a title page
+Environment: titlepage
+\begin{titlepage}
+...
+\end{titlepage}
+
+\documentclass{article}
+\usepackage{lipsum}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\begin{document}
+
+	\begin{titlepage}
+		\begin{center}
+			\huge
+			\textbf{Title of the project}
+			\vfill
+			\Large
+			\textbf{Submitted by} \\
+			\medskip
+			Author 1
+			\vfill
+			Under the guidance of
+			\medskip
+			Supervisor name
+			\vfill
+			\includegraphics[width=1in]{Screenshot}
+			\vfill
+			Department Name
+			\vfill
+			Institute Name
+			\vfill
+			Year
+			
+		\end{center}	
+	\end{titlepage}
+		
+	\lipsum[1-5]	
+	
+\end{document}		
+	
