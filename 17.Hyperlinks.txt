@@ -1,1 +1,30 @@
+Adding Hypertext and Hyper links : Adding clickable text 
 
+Hyperlinks
+Package: url
+Displays the link
+https link: https://github.com/SamSenna101/LaTeX-for-Students-Engineers-and-Scientists/tree/master
+Code:
+\url{https://github.com/SamSenna101/LaTeX-for-Students-Engineers-and-Scientists/tree/master}
+
+Hypertext
+Paclage: hyperref
+Displays the Alias which points to the link
+Example
+"Click here to view more information"
+
+Code:
+Click \href{https://github.com/SamSenna101/LaTeX-for-Students-Engineers-and-Scientists/tree/master}{here} to view more information
+
+\documentclass{article}
+\usepackage{url}
+\usepackage{hyperref}%using hyperref will highlight the https link wiht a blue color box, this wont be printer. This wont be avaible in all the LaTeX editors
+\begin{document}
+	
+	\url{https://github.com/SamSenna101/LaTeX-for-Students-Engineers-and-Scientists/tree/master}
+	
+	\paragraph{}
+	I use \href{https://github.com/SamSenna101/LaTeX-for-Students-Engineers-and-Scientists/tree/master}{Repository} and \href{https://www.google.lk}{Google} for documentation
+	
+
+\end{document}
